@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="../css/Tax.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="module" src="../js/Tax.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tax Calculator</h1>
+            <p>Your personal finance management tool</p>
+        </header>
+        
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Budget.html">Budget Calculator</a></li>
+                <li><a href="Tax.html">Tax Calculator</a></li>
+            </ul>
+        </nav>
+
+        <form action="">
+            <div class="tax-year">
+                <label for="tax-year">Tax Year:</label>
+                <select id="tax-year">
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+            </div>
+            <div class="income">
+                <label for="income">Income:</label>
+                <i class="fa-solid fa-dollar-sign"></i>
+                <input type="text" placeholder="Enter your income" class="income-input">
+            </div>
+            <div class="results">
+                <p>Estimated Amount</p>
+                <input type="text" placeholder="$0" class="results-input" readonly>
+            </div>
+            <div class="buttons">
+                <button id="calculate" type="button">Calculate</button>
+                <button id="reset" type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="financial-awareness">
+        <h2>Financial Awareness</h2>
+        <section>
+            <h3>Understanding Taxes</h3>
+            <p>Taxes are mandatory contributions levied on individuals or corporations by a government entity. Understanding how taxes work is crucial for financial planning and compliance.</p>
+        </section>
+        <section>
+            <h3>Types of Taxes</h3>
+            <ul>
+                <li><strong>Income Tax:</strong> Tax on individual or corporate earnings.</li>
+                <li><strong>Sales Tax:</strong> Tax on sales of goods and services.</li>
+                <li><strong>Property Tax:</strong> Tax on property ownership.</li>
+                <li><strong>Capital Gains Tax:</strong> Tax on the profit from the sale of assets or investments.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Tax Deductions and Credits</h3>
+            <p>Tax deductions and credits can significantly reduce your tax liability. Common deductions include mortgage interest, charitable contributions, and medical expenses. Tax credits, such as the Earned Income Tax Credit (EITC), directly reduce the amount of tax you owe.</p>
+        </section>
+        <section>
+            <h3>Tips for Tax Planning</h3>
+            <ul>
+                <li>Keep accurate records of your income and expenses.</li>
+                <li>Understand the tax implications of your investments.</li>
+                <li>Take advantage of tax-advantaged accounts like IRAs and 401(k)s.</li>
+                <li>Consult with a tax professional for personalized advice.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Budget Tracker.</p>
+    </footer>
+</body>
+</html>
